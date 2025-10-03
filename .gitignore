@@ -1,0 +1,26 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# Archivos de IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos temporales
+*.tmp
+*.temp
+~*
+
+# Notas personales (los estudiantes pueden crearlas pero no deben entregarlas)
+notas-personales.md
+borrador-*.md
+
+# Proyectos opcionales (si se incluyen, usar carpetas específicas)
+# proyectos-externos/
+
+# Archivos de configuración locales
+.env
+config.local.*
