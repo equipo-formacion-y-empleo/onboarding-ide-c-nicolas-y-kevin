@@ -1,6 +1,6 @@
 # Conclusiones y Evaluación - Entornos de Desarrollo C#
 
-**Autores**: [Nombre 1] y [Nombre 2]
+**Autores**: [Kevin] y [Nicolás]
 **Fecha Entrega Inicial**: [Fecha]
 **Fecha Entrega Final**: [Fecha]
 
