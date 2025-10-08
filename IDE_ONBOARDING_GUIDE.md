@@ -18,10 +18,20 @@
 
 ## 1. Acceder al sitio oficial
 Dirígete al sitio web oficial de Visual Studio Code:
+
 [https://code.visualstudio.com](https://code.visualstudio.com)
 ![Imagen_Enlace_VSCode](screenshots/VSCode_enlace.png)
 
-> **💡 Sobre las imágenes**: Incluye capturas de pantalla para mostrar los diferentes pasos o resultados. Ejemplo: ![Descripción clara del contenido](screenshots/placeholder.png)`
+---
+
+## 2. Seleccionar el sistema operativo
+Haz clic en el botón de descarga correspondiente a tu sistema operativo:
+
+- **Windows**
+- **macOS**
+- **Linux**
+
+![Sistemas operativos posibles](screenshots/VSCode_SistemaOperativo.png)
 
 **Proceso de instalación:**
 - **Descarga:** [Describir el proceso]
