@@ -18,7 +18,6 @@
 
 ## 1. Acceder al sitio oficial
 Dirígete al sitio web oficial de Visual Studio Code:
-
 [https://code.visualstudio.com](https://code.visualstudio.com)
 ![Imagen_Enlace_VSCode](screenshots/VSCode_enlace.png)
 
@@ -33,12 +32,49 @@ Haz clic en el botón de descarga correspondiente a tu sistema operativo:
 
 ![Sistemas operativos posibles](screenshots/VSCode_SistemaOperativo.png)
 
-**Proceso de instalación:**
-- **Descarga:** [Describir el proceso]
-- **Opciones del instalador:** [Documentar las opciones que se consideraron importantes]
-- **Verificación:** [Cómo verificar que funciona]
+---
 
-*Es posible documentar múltiples métodos.*
+## 3. Descargar el instalador
+Esto dependiendo de tu sistema operativo, se descargará uno de los siguientes archivos:
+
+- `.exe` para **Windows** *"En nuestro caso"*
+- `.dmg` para **macOS**
+- `.deb` o `.rpm` para **Linux**
+
+![En nuestro caso ".exe" y estamos en Windows](screenshots/VSCode_Archivo.png)
+
+---
+
+## 4. Instalar Visual Studio Code
+
+### Para Windows
+1. Ejecuta el archivo `.exe`.
+2. Acepta los términos de licencia.
+3. Elige la carpeta de instalación.
+4. Opcional: activa las opciones como:
+   - "Agregar al PATH"
+   - "Crear accesos directos"
+5. Haz clic en **Instalar**.
+6. Al finalizar, haz clic en **Finalizar** para abrir VS Code.
+
+---
+
+### Para macOS
+1. Abre el archivo `.dmg`.
+2. Arrastra el ícono de **Visual Studio Code** a la carpeta **Aplicaciones**.
+3. *(Opcional)* Para abrir VS Code desde la terminal:
+   - Abre VS Code
+   - Presiona `Cmd + Shift + P`
+   - Escribe `Shell Command: Install 'code' command in PATH` y selecciona la opción.
+
+---
+
+### Para Linux
+
+#### Para distribuciones Debian/Ubuntu (.deb)
+
+sudo dpkg -i nombre-del-archivo.deb
+sudo apt-get install -f  # Para corregir dependencias si es necesario
 
 ### Uso Básico de VS Code
 
