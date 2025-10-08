@@ -4,7 +4,7 @@
 
 > **Nota importante**: Este documento se enfoca en aspectos técnicos y procedimientos. Para análisis comparativos, reflexiones personales y conclusiones, utiliza el archivo `CONCLUSIONES_EVALUACION.md`.
 
-**Autores**: [Nombre 1] y [Nombre 2]
+**Autores**: [Nicolas] y [Kevin]
 **Fecha V0**: [Fecha de entrega inicial]
 **Fecha V1**: [Fecha de entrega final]
 
@@ -14,7 +14,12 @@
 
 ### Instalación y Verificación
 
-**Método de instalación:** [Especifica el método recomendado]
+#  Método de Instalación de Visual Studio Code
+
+## 1. Acceder al sitio oficial
+Dirígete al sitio web oficial de Visual Studio Code:
+[https://code.visualstudio.com](https://code.visualstudio.com)
+![Imagen_Enlace_VSCode](screenshots/VSCode_enlace.png)
 
 > **💡 Sobre las imágenes**: Incluye capturas de pantalla para mostrar los diferentes pasos o resultados. Ejemplo: ![Descripción clara del contenido](screenshots/placeholder.png)`
 
