@@ -79,8 +79,51 @@ Esto dependiendo de tu sistema operativo, se descargará uno de los siguientes a
 
 #### Para distribuciones Debian/Ubuntu (.deb)
 
-sudo dpkg -i nombre-del-archivo.deb
-sudo apt-get install -f  # Para corregir dependencias si es necesario
+1. Ejecuta el archivo `.deb` .
+2. Abre una terminal en la carpeta donde descargaste el archivo y ejecuta:
+
+    ```bash
+    sudo dpkg -i code_versión_amd64.deb
+    sudo apt-get install -f  # Para corregir dependencias si es necesario
+    ```
+
+    > Reemplaza `code_versión_amd64.deb` por el nombre real del archivo descargado, por ejemplo: `code_1.85.1-1702462158_amd64.deb`.
+
+---
+
+#### Para distribuciones Fedora/RHEL/CentOS (.rpm)
+
+1. Ejecuta elarchivo `.rpm` descargado anteriomente.
+2. Abre una terminal y ejecuta:
+
+    ```bash
+    sudo rpm -i code-versión.x86_64.rpm
+    ```
+
+   Si encuentras problemas de dependencias, puedes usar:
+
+    ```bash
+    sudo dnf install ./code-versión.x86_64.rpm
+    ```
+
+---
+
+#### Usando Snap (disponible en muchas distribuciones)
+
+### Si tienes Snap instalado:
+
+```bash
+sudo snap install code --classic
+
+
+---
+
+#### Usando Snap (disponible en muchas distribuciones)
+
+Si tienes Snap instalado:
+
+```bash 
+sudo snap install code --classic
 
 ### Uso Básico de VS Code
 
