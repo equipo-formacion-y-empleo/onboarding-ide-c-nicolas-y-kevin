@@ -71,24 +71,47 @@ Ejemplos:
 ### SDK .NET
 
 **Proceso de instalación:**
-1. **Descarga e instalación:** [Describir el proceso]
-2. **Verificación:** [Cómo comprobar que funciona]
+1. **Descarga e instalación:**
+- Visitar la página [dotnet](https://dotnet.microsoft.com/download).
+
+![](screenshots/dotnet1.png)
+- Descargar el SDK de .NET.
+
+![](screenshots/dotnet2.png)
+- Ejecutar el istalador y seguir el asistente.
+
+![](screenshots/dotnet3.png)
+
+1. **Verificación:** [Cómo comprobar que funciona]
+- Abrir el terminal y ejecutar: `dotnet --version`
+- Debe mostrar la versión del SDK instalada
+
+![](screenshots/dotnet4.png)
 
 ### Configuración para C#
 
 **Extensiones esenciales:**
-- **Soporte oficial para C#**: Extensión que proporciona IntelliSense, debugging y compilación
+- **C# Dev Kit** (Microsoft): Proporciona IntelliSense, debugging, navegación de código y gestión de proyectos.
+- **C#** (Microsoft): Extensión base con soporte del lenguaje.
 
+![](screenshots/dotnet5.png)
 
 **Configuraciones específicas para C#:** 
-[Describir las configuraciones que se aplicaron, como formateo automático, intellisense, o configuraciones del compilador]
+- **Formateo automático al guardar**: Extensión Prettier - Code formatter
+
+![](screenshots/dotnet6.png)
+- **IntelliSense mejorado**: Se activa automáticamente con C# Dev Kit
+- **Detección del SDK**: C# Dev Kit detecta automáticamente el SDK instalado
+- **Auto-guardado**: File -> Auto Save
 
 **Debugging básico:**
-- Configuración de puntos de interrupción (breakpoints)
-- Ejecutar y depurar
-- Inspección de variables
+- **Breakpoints**: Click en el margen izquierdo del editor (aparece punto rojo)
+- **Ejecutar y depurar**: Presionar F5 o icono "Run and Debug"
+- **Inspección**: Variables visibles en panel lateral, hover para ver valores en tiempo real
 
-> **Enfoque práctico**: Concentra tu documentación en las funcionalidades básicas que usarás día a día.
+![](screenshots/dotnet7.png)
+
+> **Enfoque práctico**: El SDK .NET + VS Code te permite compilar, ejecutar y depurar sin necesidad de Visual Studio completo.
 
 ### Flujo de Trabajo con C#
 
@@ -96,17 +119,44 @@ Ejemplos:
 [Documentar el proceso para crear proyectos C#]
 
 **Estructura de proyecto:**
+
+- En el siguiente código 
 ```csharp
-// Incluir aquí un ejemplo del código desarrollado
-// Comentarios sobre las decisiones tomadas
+string ShowMessage(string name)
+{
+    return $"Hola {name}, Bienvenido";
+}
+
+Console.WriteLine(ShowMessage(args.Length > 0 ? args[0] : "Nombre1"));
+Console.WriteLine(ShowMessage(args.Length > 1 ? args[1] : "Nombre2"));
 ```
 
 **Compilación y ejecución:**
-[Proceso para compilar y ejecutar proyectos]
+Para compilar y ejecutar el código, sigue estos pasos:
+
+1. **Compilación:**
+   - Abre el terminal integrado en VS Code (Ctrl + `).
+   - Navega hasta la carpeta del proyecto.
+   - Ejecuta el siguiente comando para compilar el código:
+     ```
+     dotnet build
+     ```
+
+2. **Ejecución:**
+   - Después de compilar, ejecuta el siguiente comando para ejecutar el código:
+     ```
+     dotnet run
+     ```
+- **Terminal integrado:** Uso del terminal dentro de VS Code para comandos `dotnet`
 
 **Debugging:**
-[Configuración y uso de debugging]
-
+- **Breakpoints:** Cómo establecer y usar puntos de interrupción
+- **Inspección de variables:** Uso del panel de variables y hover para ver valores en tiempo real
+- **Control de ejecución:** Continuar (F5), Step Over (F10), Step Into (F11), Step Out (Shift+F11)
+- **Call Stack:** Navegación por la pila de llamadas durante la depuración
+- **Watch:** Añadir expresiones para monitorear su valor durante la depuración
+- **Console:** Uso de la consola de depuración para evaluar expresiones y ver salidas
+- **Configuración de launch.json:** Personalización de configuraciones de depuración si es necesario
 ---
 
 ## Visual Studio - IDE Alternativo
@@ -114,10 +164,18 @@ Ejemplos:
 ### Instalación
 
 **Proceso de instalación:**
-- **Descarga:** [Versión recomendada - Community/Professional]
-- **Componentes necesarios:** [Componentes específicos para C#]
-- **Verificación:** [Cómo confirmar instalación correcta]
+- **Descarga:** Visita la página oficial https://visualstudio.microsoft.com/es/
+Se recomienda la versión Community (gratuita) o Professional (si se dispone de licencia).
 
+![](screenshots/vs1.png)
+- **Componentes necesarios:** Durante la instalación, selecciona la carga de trabajo:
+Desarrollo de escritorio con .NET (incluye C#, Windows Forms, WPF, .NET SDK, y compiladores).
+
+![](screenshots/vs2.png)
+- **Verificación:** 
+  - Abre Visual Studio.
+  - Crea un nuevo proyecto C# (por ejemplo, “Consola .NET”).
+  - Si el proyecto compila y ejecuta correctamente (“Hello World”), la instalación fue exitosa.
 ### Desarrollo con C#
 
 **Creación de proyecto:**
@@ -132,13 +190,16 @@ Ejemplos:
 
 ## Configuración de Lenguaje Adicional
 
-**Lenguaje seleccionado:** [Java/Python/Otro] - **Justificación:** [Por qué se eligió este lenguaje]
+**Lenguaje seleccionado:** Python
+**Justificación:** Python es un lenguaje versátil y fácil de aprender, ideal para desarrollo rápido y prototipado.
 
 ### Instalación del Entorno
 
 **Runtime/SDK:**
-- **Descarga e instalación:** [Proceso paso a paso]
-- **Verificación:** [Cómo confirmar que funciona]
+- **Descarga e instalación:** Visitar la página oficial https://www.python.org/downloads/
+- **Verificación:**
+  - Abrir terminal y ejecutar: `python --version` o `python3 --version`
+  - Debe mostrar la versión instalada
 
 ### Configuración en VS Code
 
