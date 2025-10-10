@@ -50,12 +50,18 @@ Esto dependiendo de tu sistema operativo, se descargará uno de los siguientes a
 ### Para Windows
 1. Ejecuta el archivo `.exe`.
 2. Acepta los términos de licencia.
+- ![Término y licencias](screenshots/VSCode_Terminos.png)
 3. Elige la carpeta de instalación.
+- ![Término y licencias](screenshots/VSCode_Terminos1.png) 
 4. Opcional: activa las opciones como:
    - "Agregar al PATH"
    - "Crear accesos directos"
+- ![Término y licencias](screenshots/VSCode_Terminos2.png)
 5. Haz clic en **Instalar**.
+   
+- ![Término y licencias](screenshots/VSCode_Terminos4.png)
 6. Al finalizar, haz clic en **Finalizar** para abrir VS Code.
+- ![Término y licencias](screenshots/VSCode_Terminos5.png)
 
 ---
 
