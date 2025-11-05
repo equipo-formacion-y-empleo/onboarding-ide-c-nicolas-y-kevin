@@ -276,15 +276,24 @@ Desarrollo de escritorio con .NET (incluye C#, Windows Forms, WPF, .NET SDK, y c
   - Abre Visual Studio.
   - Crea un nuevo proyecto C# (por ejemplo, “Consola .NET”).
   - Si el proyecto compila y ejecuta correctamente (“Hello World”), la instalación fue exitosa.
+ 
+![](screenshots/vs3.png)
 ### Desarrollo con C#
 
 **Creación de proyecto:**
-[Describir el proceso para crear un proyecto C# en Visual Studio]
+- Abrir Visual Studio
+- Seleccionar "Crear un nuevo proyecto"
+- Elegir "Aplicación de consola (.NET Core)" como tipo de proyecto
+- Configurar el nombre y la ubicación del proyecto
+- Hacer clic en "Crear"
 
+![](screenshots/vs4.png)
+![](screenshots/vs5.png)
 **Flujo de trabajo básico:**
-- Compilación y ejecución
-- Uso de Solution Explorer
-- Debugging básico
+- **Escribir código:** Utiliza el editor para escribir tu código C#
+- **Compilar:** Presiona `Ctrl + Shift + B` o selecciona "Compilar" en el menú
+- **Ejecutar:** Presiona `F5` para ejecutar con depuración o `Ctrl + F5` para ejecutar sin depuración
+- **Debugging:** Usa puntos de interrupción, inspección de variables y otras herramientas de depuración integradas
 
 ---
 
@@ -297,10 +306,13 @@ Desarrollo de escritorio con .NET (incluye C#, Windows Forms, WPF, .NET SDK, y c
 
 **Runtime/SDK:**
 - **Descarga e instalación:** Visitar la página oficial https://www.python.org/downloads/
+
+![](screenshots/py1.png)
 - **Verificación:**
   - Abrir terminal y ejecutar: `python --version` o `python3 --version`
   - Debe mostrar la versión instalada
 
+![](screenshots/py2.png)
 ### Configuración en VS Code
 
 **Extensiones por lenguaje:**
