@@ -9,7 +9,6 @@
 **Fecha V1**: [Fecha de entrega final]
 
 ---
-
 ## Visual Studio Code - Entorno Principal
 
 ### Instalación y Verificación
@@ -102,9 +101,8 @@ Esto dependiendo de tu sistema operativo, se descargará uno de los siguientes a
 
    Si encuentras problemas de dependencias, puedes usar:
 
-    ```bash
+
     sudo dnf install ./code-versión.x86_64.rpm
-    ```
 
 ---
 
@@ -113,8 +111,8 @@ Esto dependiendo de tu sistema operativo, se descargará uno de los siguientes a
 ### Si tienes Snap instalado:
 
 ```bash
+
 sudo snap install code --classic
-```
 
 ---
 
@@ -123,50 +121,120 @@ sudo snap install code --classic
 Si tienes Snap instalado:
 
 sudo snap install code --classic
+``` 
+bash
 
-### Uso Básico de VS Code
+# Uso Básico de VS Code
 
-**Navegación y funcionalidades básicas:**
-- Navegación por la interfaz
-- Edición de código
-- Uso de la paleta de comandos
-- Gestión de archivos y carpetas
+## Navegación por la interfaz
+VS Code organiza todo en un panel lateral donde puedes acceder al explorador de archivos,
+extensiones, búsqueda y control de versiones. La barra superior muestra las pestañas de los archivos abiertos y la barra de estado indica información 
+útil como el lenguaje detectado o errores del editor.  
 
-### Personalización del Entorno
+![BarrraVS](screenshots/VSBarralateral.png)
 
-**Configuraciones aplicadas:** [Describir las personalizaciones que se realizaron]
+## Edición de código
+El editor permite escribir código con resaltado de sintaxis, autocompletado inteligente y detección de errores mientras escribes. Además, puedes duplicar líneas, seleccionar múltiples puntos y usar la búsqueda integrada para editar más rápido.  
 
-*Ejemplos de configuraciones útiles (elegir las que se consideren relevantes):*
+https://marketplace.visualstudio.com
 
-**Temas e iconos:**
-Ejemplos:
-- Material Theme, One Dark Pro
-- File Icon Theme para mejor identificación de archivos
+## Uso de la paleta de comandos
+Con `Ctrl + Shift + P` accedes a una barra donde puedes buscar cualquier función de VS Code sin navegar por menús. Permite instalar extensiones, cambiar configuraciones, abrir archivos y ejecutar comandos de depuración.  
 
-**Configuración de fuentes:**
-Ejemplos:
-- Fira Code, JetBrains Mono (con ligaduras)
 
-**Atajos de teclado útiles:**
-Ejemplos:
-- Ctrl+/ para comentar/descomentar
-- Ctrl+Shift+P para paleta de comandos
-- Ctrl+` para terminal integrada
-- Alt+↑/↓ para mover líneas
+## Gestión de archivos y carpetas
+Desde el panel del explorador puedes crear carpetas, mover archivos, renombrarlos y abrir proyectos enteros. VS Code guarda el historial de archivos recientes y permite trabajar con varias carpetas en una misma ventana.  
+*Aquí te dejo más información donde puedes ver sobre estas y mas funciones de VSCode* https://code.visualstudio.com/docs
 
-**Configuración del editor:**
-Ejemplos:
-- Formateo automático al guardar
-- Detección automática de indentación
-- Word wrap para líneas largas
+---
 
-**Terminal integrada:**
-Ejemplos:
-- PowerShell como terminal predeterminado
-- Configuración de perfil personalizado
+# Personalización del Entorno
 
-> **Personaliza según tus necesidades**: Estas son sugerencias basadas en prácticas comunes. Experimenta y documenta las configuraciones que encuentres más útiles para tu flujo de trabajo.> 💼 **Manual de Incorporación**: Esta guía establece los estándares del equipo para configurar entornos de desarrollo en C#. Cualquier nuevo desarrollador debe poder seguir estas instrucciones para configurar su entorno de trabajo de manera consistente con el resto del equipo.
+**Configuraciones aplicadas:**  
+Se aplicaron ajustes visuales como el cambio de tema, iconos y fuentes, además de activar herramientas de productividad como el formateo automático, la indentación inteligente y la personalización de la terminal integrada.
 
+---
+
+## Temas e Iconos
+
+### Material Theme
+Ofrece combinaciones de colores más modernas y suaves que facilitan la lectura y reducen el cansancio visual.
+
+### Monokay
+Esta ofre fondo oscuro pero medianamente iluminado conjuntados con verdes en las letras.
+
+![Imagen_Monokay](screenshots/tema_Monokay.png)
+
+### One Dark Pro
+Basado en el esquema de colores de Atom, da un estilo oscuro profesional y fácil de ver durante sesiones largas.
+
+### File Icon Theme
+Mejora la experiencia al mostrar diferentes iconos según el tipo de archivo, lo que facilita identificarlos rápidamente.  
+
+- Ejemplos
+![Temas](screenshots/temas_Completos.png)
+
+---
+
+## Fuentes
+
+### Fira Code
+Incluye ligaduras que unen ciertos símbolos del código en formas más claras y agradables visualmente. Esto ayuda a entender estructuras complejas.
+
+![Firacode](screenshots/firacode.png)-https://github.com/tonsky/FiraCode
+
+### JetBrains Mono
+Especialmente diseñada para programar. Sus líneas anchas y espaciado equilibrado aumentan la comodidad durante la lectura prolongada.  
+
+https://www.jetbrains.com/lp/mono/
+
+---
+
+## Atajos de Teclado
+
+### `Ctrl + /`
+Comenta o descomenta líneas sin tener que seleccionar nada.
+
+### `Ctrl + Shift + P`
+Abre la paleta de comandos para acceder rápidamente a cualquier función.
+
+### ``Ctrl + ` `` 
+Abre la terminal integrada sin salir del editor.
+
+### `Alt + ↑/↓`
+Mueve líneas enteras hacia arriba o abajo, muy útil para reorganizar código.  
+
+https://code.visualstudio.com/docs/getstarted/keybindings
+
+---
+
+## Configuración del Editor
+
+### Formateo automático al guardar
+Permite que el código se ordene y acomode cada vez que guardas, manteniendo un estilo limpio.
+
+### Word Wrap
+Evita que las líneas largas se salgan de la pantalla, haciendo más cómoda la lectura.
+
+### Indentación automática
+VS Code detecta el estilo de indentación del archivo y lo mantiene consistente para evitar errores visuales.  0
+
+
+---
+
+## Terminal Integrada
+
+### PowerShell como predeterminada
+Permite ejecutar comandos sin abrir otra aplicación. Es rápida y flexible, perfecta para proyectos en Windows.
+
+![terminal_predeterminada](screenshots/terminal.png)
+
+### Perfiles personalizados
+Puedes crear perfiles diferentes para bash, cmd o PowerShell, según lo que necesites para cada proyecto.  
+
+![terminal_Personalizada](screenshots/terminal_Personalizada.png)
+
+---
 ### SDK .NET
 
 **Proceso de instalación:**
