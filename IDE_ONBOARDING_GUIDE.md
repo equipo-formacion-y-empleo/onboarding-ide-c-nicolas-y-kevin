@@ -114,7 +114,7 @@ Esto dependiendo de tu sistema operativo, se descargará uno de los siguientes a
 
 ```bash
 sudo snap install code --classic
-
+```
 
 ---
 
@@ -122,7 +122,6 @@ sudo snap install code --classic
 
 Si tienes Snap instalado:
 
-```bash 
 sudo snap install code --classic
 
 ### Uso Básico de VS Code
@@ -324,37 +323,269 @@ Desarrollo de escritorio con .NET (incluye C#, Windows Forms, WPF, .NET SDK, y c
 - **Soporte oficial de Python**: Extensión completa con intérprete y debugging
 
 *Para otros lenguajes:*
-- Busca la extensión oficial del lenguaje que proporcione soporte completo
+- Ejemplos:
+  - JavaScript/TypeScript: "ESLint", "Prettier"
+  - Go: "Go"
+  - Ruby: "Ruby"
+  - PHP: "PHP Intelephense"
+  - Rust: "rust-analyzer"
+  - Kotlin: "Kotlin Language"
+  - Swift: "Swift for Visual Studio Code"
+  - Dart: "Dart-Code"
+  - R: "R Language"
 
 **Configuraciones específicas aplicadas:**
-[Documentar los ajustes que se realizaron, como configuración del intérprete, formateo automático, linting, etc.]
+- **Python:** Configuración del intérprete, formateo con Black, linting con Pylint
+- **Java:** Configuración del JDK, formateo con Google Java Format
+- **JavaScript/TypeScript:** Configuración de ESLint y Prettier
+- **Go:** Configuración del GOPATH y formateo con gofmt
+- **Ruby:** Configuración del intérprete y formateo con RuboCop
+- **PHP:** Configuración del intérprete y formateo con PHP CS Fixer
+- **Rust:** Configuración del toolchain y formateo con rustfmt
+- **Kotlin:** Configuración del JDK y formateo con ktlint
+- **Swift:** Configuración del toolchain y formateo con swift-format
+- **Dart:** Configuración del SDK y formateo con dartfmt
+- **R:** Configuración del intérprete y formateo con styler
+
+
 
 ### Proyecto de Ejemplo
 
 **Código desarrollado:**
-```[lenguaje]
-// Código de ejemplo aquí
-// Comentarios explicativos
+```python
+import argparse
+import sys
+from pathlib import Path
+
+#!/usr/bin/env python3
+"""
+
+Opciones:
+    -h, --help        Mostrar ayuda
+    --factorial N     Calcular factorial de N (entero >= 0)
+    --wc FILE         Contar líneas, palabras y caracteres de FILE
+"""
+
+
+def factorial(n: int) -> int:
+        if n < 0:
+                raise ValueError("n debe ser >= 0")
+        result = 1
+        for i in range(2, n + 1):
+                result *= i
+        return result
+
+def wc(path: Path):
+        if not path.exists():
+                raise FileNotFoundError(f"No existe el archivo: {path}")
+        lines = words = chars = 0
+        with path.open("r", encoding="utf-8") as f:
+                for line in f:
+                        lines += 1
+                        chars += len(line)
+                        words += len(line.split())
+        return lines, words, chars
+
+def parse_args():
+        p = argparse.ArgumentParser(description="Ejemplos: factorial y conteo tipo wc")
+        p.add_argument("--factorial", type=int, help="Calcular factorial de un entero >= 0")
+        p.add_argument("--wc", type=Path, help="Contar líneas, palabras y caracteres de un archivo")
+        return p.parse_args()
+
+def main():
+        args = parse_args()
+        try:
+                if args.factorial is not None:
+                        n = args.factorial
+                        print(f"{n}! = {factorial(n)}")
+                elif args.wc is not None:
+                        lines, words, chars = wc(args.wc)
+                        print(f"{args.wc}: {lines} líneas, {words} palabras, {chars} caracteres")
+                else:
+                        print("Nada que hacer. Usa --help para ver las opciones.")
+        except Exception as e:
+                print("Error:", e, file=sys.stderr)
+                sys.exit(1)
+
+if __name__ == "__main__":
+        main()
+
+# Comentarios explicativos:
+# - Este script es ejecutable desde la terminal (ej.: python index.py --factorial 5).
+# - Implementa dos funciones de ejemplo:
+#     * factorial(n): calcula el factorial de un entero no negativo.
+#     * wc(path): devuelve el número de líneas, palabras y caracteres de un archivo de texto.
+# - Usa argparse para parsear las opciones de la línea de comandos y Path para manejo de rutas.
+# - Captura errores básicos (archivo no encontrado, argumentos inválidos) e imprime mensajes por stderr.
+
 ```
 
 **Proceso de ejecución:**
-[Describir cómo ejecutar el código]
+```python
+# Ejemplo de ejecución del script:
+python index.py --factorial 5
+# Salida esperada:
+5! = 120s
+```
+**Capturas de pantalla del proyecto en VS Code:**
+![](screenshots/py2.png)
+
+**Ejecución paso a paso**:
+- Abrimos terminal con Ctrl+j
+- Ejecutamos el comando `python index.py --factorial 5`
 
 ---
 
 ## Configuraciones Recomendadas
 
 **Configuraciones generales:**
-[Documentar configuraciones que se consideran útiles para cualquier desarrollador]
+Ajustes recomendados para cualquier desarrollador que comience a trabajar con VS Code.
+
+### 1.1 Formato y estilo de código
+* Aplicar estándares de estilo:
+    * **Python**: PEP 8
+    * **JavaScript/TypeScript**: StandardJS, ESLint o Prettier
+* Activar formateo al guardar:
+    ```json
+    "editor.formatOnSave": true
+    ```
+* Configurar linters necesarios:
+    * **Python** → `flake8`, `pylint`, `black`
+    * **JS/TS** → `eslint`, `prettier`
+
+### 1.2 Automatización de pruebas
+* Activar detección automática de tests:
+    * **Python**: PyTest + extensión Python.
+    * **JavaScript/TypeScript**: Jest o Vitest.
+* Opcional: ejecutar pruebas al guardar usando extensiones como:
+    * `Jest`
+    * `Test Explorer UI`
+
+### 1.3 Control de versiones (Git)
+* Habilitar Git integrado:
+    ```json
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false
+    ```
+* Conectar repositorios con:
+    * **GitHub**, **GitLab**, **Bitbucket**.
+* Activar **GitLens** para obtener:
+    * Autores por línea
+    * Historial detallado
+    * Comparaciones rápidas
+
+### 1.4 Terminal integrada
+* Configura el shell preferido:
+    * **Linux/Mac**: `bash`, `zsh`, `fish`
+    * **Windows**: `PowerShell`, `Git Bash`, `WSL`
+* Ejemplo de configuración:
+    ```json
+    "terminal.integrated.defaultProfile.windows": "Git Bash"
+    ```
+
+### 1.5 Snippets personalizados
+Útiles para acelerar tareas repetitivas:
+* Crear snippets globales:
+    * En VS Code → `File` > `Preferences` > `User Snippets`
+* Ejemplos:
+    * Plantilla para clases **Python**
+    * Comandos básicos de consola
+    * Boilerplate **HTML/CSS/JS**
+
+### 1.6 Sincronización de configuraciones
+* Usar **Settings Sync** integrado:
+    * Sincroniza extensiones, configuraciones, atajos, snippets.
+* Alternativa: extensiones como `Settings Sync v3`.
+
+---
 
 **Herramientas adicionales:**
-[Extensions, herramientas CLI, o utilidades que se consideran beneficiosas]
+Extensiones y utilidades CLI recomendadas según el stack.
+
+### Extensiones recomendadas (generales)
+* `Material Icon Theme`
+* `VS Code IntelliSense`
+* `GitLens`
+* `Live Server`
+* `Docker`
+* `REST Client`
+
+### Para Python
+* **Extensiones**:
+    * `Python` (Microsoft)
+    * `Pylance`
+    * `Black Formatter`
+    * `Even Better TOML`
+    * `Jupyter`
+* **CLI recomendadas**:
+    * `pipx`
+    * `virtualenv`
+    * `pytest`
+
+### Para Web (HTML/CSS/JS)
+* **Extensiones**:
+    * `ESLint`
+    * `Prettier`
+    * `Auto Rename Tag`
+    * `Path Intellisense`
+    * `Tailwind CSS IntelliSense`
+* **CLI recomendadas**:
+    * `npm`, `npx`
+    * `vite`
+    * `eslint`, `prettier`
+
+### Para Git / DevOps
+* **Extensiones**:
+    * `Git Graph`
+    * `GitHub Pull Requests`
+    * `Docker`
+    * `Kubernetes`
+
+---
 
 **Solución de problemas comunes:**
-[Problemas frecuentes durante la configuración y sus soluciones]
+### No se ejecuta el formateo al guardar
+* Verifica:
+    ```json
+    "editor.formatOnSave": true,
+    "[python]": { "editor.defaultFormatter": "ms-python.black-formatter" }
+    ```
 
+### Python no detecta el entorno virtual
+* Selecciona intérprete:
+    * VS Code → `Ctrl + Shift + P` → Buscar: **“Python: Select Interpreter”**
+
+### Extensiones no funcionan
+* Reinstalar extensión
+* Verificar permisos del workspace
+* Limpiar caché:
+    * `Help` → `Toggle Developer Tools` → `Application` → `Clear Storage`
+
+### Git no sincroniza
+* Revisar configuración global:
+    * `git config --global user.name`
+    * `git config --global user.email`
+* Revisar autenticación (Tokens, SSH).
+
+### Terminal no abre o muestra errores
+* Cambiar terminal por defecto:
+    * `Configuración` → Buscar: **“Terminal > Default Profile”**
+
+---
 **Recursos útiles:**
-- Enlace [Enlace]: [Descripción]
-- Documentación [Documentación]: [Descripción]
+### Documentación oficial
+* [VS Code Docs: Guía completa](https://code.visualstudio.com/docs)
+* [Python en VS Code: Integración con Python](https://code.visualstudio.com/docs/python/python-tutorial)
+* [GitHub Docs: Uso de repositorios](https://docs.github.com/es)
+
+### Guías recomendadas
+* [PEP 8 Style Guide](https://peps.python.org/pep-0008/)
+* [MDN Web Docs](https://developer.mozilla.org/es/docs/Web)
+* [Git Book](https://git-scm.com/book/es/v2)
+
+### Cursos y tutoriales
+* Curso oficial de VS Code en YouTube
+* Roadmap.sh
+* FreeCodeCamp
 
 ---
