@@ -1,7 +1,7 @@
 # Conclusiones y Evaluación - Entornos de Desarrollo C#
 
 **Autores**: [Kevin] y [Nicolás]
-**Fecha Entrega Inicial**: [Fecha]
+**Fecha Entrega Inicial**: [08/11/2025]
 **Fecha Entrega Final**: [Fecha]
 
 > **Instrucciones**: Completar la **Sección A** para la entrega inicial y **todas las secciones** para la entrega final. Indicar claramente qué partes corresponden a cada fase.
@@ -12,20 +12,20 @@
 
 ### Primeras Impresiones
 
-| Aspecto | Visual Studio Code | Visual Studio |
-|---------|-------------------|---------------|
-| **Facilidad de instalación** | [Experiencia inicial] | [Experiencia inicial] |
-| **Primera impresión** | [Evaluación] | [Evaluación] |
-| **Configuración básica** | [Observación] | [Observación] |
-| **Soporte para C#** | [Análisis inicial] | [Análisis inicial] |
+| Aspecto | Visual Studio Code (VS Code) | Visual Studio (VS) |
+|---------|------------------------------|--------------------|
+| **Facilidad de instalación** | Rápida y ligera. Un solo ejecutable pequeño. | Más compleja y lenta debido a la selección de "Workloads". |
+| **Primera impresión** | Muy limpia, rápida de cargar. Se siente como un editor de texto avanzado. | Intensa, con muchos paneles, opciones y menús visibles. Se siente como un IDE completo. |
+| **Configuración básica** | Requiere instalar extensiones (p.ej., C# Dev Kit) para funcionalidad completa. | Todo viene integrado y listo para usar inmediatamente (out-of-the-box). |
+| **Soporte para C#** | Funcional, pero a menudo se siente menos maduro que VS. Depende de extensiones. | Excelente. El mejor soporte para C# y .NET, con refactorización avanzada. |
 
 ### Preferencia Inicial
-**IDE que se prefiere tras la configuración inicial:** [Visual Studio Code / Visual Studio]
+**IDE que se prefiere tras la configuración inicial:** **Visual Studio Code**
 
 **Razones iniciales:**
-- [Primera razón basada en configuración inicial]
-- [Segunda razón basada en primeras pruebas]
-- [Tercera razón si aplica]
+* **Velocidad y Ligereza:** Carga instantánea y menor consumo de recursos, ideal para desarrollo rápido y proyectos pequeños.
+* **Flexibilidad:** Permite adaptar el entorno exactamente a las necesidades del proyecto sin sobrecargarlo con funcionalidades no utilizadas.
+* **Multi-lenguaje:** Se siente más natural para entornos multi-lenguaje (C#, Python, JS) que VS, que está muy enfocado en Microsoft.
 
 ---
 
