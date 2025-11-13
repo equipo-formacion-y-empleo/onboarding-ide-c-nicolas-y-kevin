@@ -103,16 +103,29 @@
 **Justificación basada en experiencia:**
 [Explicación fundamentada en el uso real de ambas herramientas]
 
+>Como estoy empezando y todavía estoy aprendiendo lo básico, VScode me parece la opción más sencilla y cómoda.Es un programa ligero, fácil de usar y no abruma con tantas opcines desde el principio, además es intuitivo y atractivo visualmente.Solo necesitas instalar la extensión de C# y ya puedes empezar a programar sin complicaciones.
+
+>Además, su interfaz es muy clara, lo que ayuda mucho cuando todavía estás entendiendo cómo funciona el código. Visual Studio Code también es más rápido y funciona bien incluso en ordenadores que no son muy potentes. Por eso, a mi parecer creo que para alguien que está comenzando, es una herramienta más amigable y práctica que permite concentrarse en aprender lo fundamental antes de pasar a entornos más avanzados.
 ### Configuraciones Esenciales
 
 **Configuraciones indispensables para productividad:**
-1. [Configuración crítica 1]
-2. [Configuración crítica 2]
-3. [Configuración crítica 3]
 
-**Extensiones que no pueden faltar:**
-- [Extensión esencial 1]
-- [Extensión esencial 2]
+Activar el formateo automático del código
+Mantiene tu código ordenado y facilita la lectura cuando estás empezando. Se usa con Shift + Alt + F.
+
+Configurar el autosave (Guardado automático)
+Evita perder cambios mientras trabajas y es muy útil si aún no tienes el hábito de guardar cada poco.
+Habilitar el terminal integrado
+
+Permite ejecutar comandos sin salir de VS Code, algo muy práctico cuando empiezas a trabajar con C# y .NET.
+
+⸻
+
+**Extensiones que no pueden faltar**
+	•	C# Dev Kit
+        Extensión esencial para programar en C#. Aporta autocompletado, análisis de errores y herramientas básicas.
+	•	.NET Extension Pack
+        Facilita la creación y ejecución de proyectos .NET, muy útil si recién estás aprendiendo.
 
 ### Para Futuros Desarrolladores
 
@@ -127,16 +140,31 @@
 
 ---
 
+### Para Futuros Desarrolladores
+
+**Consejos para alguien que inicia con C#:**
+- Empieza con ejercicios simples para entender bien las variables, condicionales y bucles antes de pasar a cosas más avanzadas.
+- Practica un poco todos los días; aunque sean 15 minutos, ayuda mucho a que el código se te haga más familiar.
+- Usa el autocompletado de Visual Studio Code para aprender cómo se escribe cada cosa y evitar errores,pero obviamente sin abusar de ello, más que nada cuando exista algo que no consigas entender.
+
+**Errores a evitar:**
+- **No comentar el código.**  
+  Evítalo agregando comentarios simples que expliquen qué hace cada parte; esto ayuda muchísimo cuando estás empezando.
+- **Copiar código sin entenderlo.**  
+  Siempre intenta leerlo y entenderlo primero; así realmente aprendes y no te quedas atascado después.
+
+---
+
 ## 🤝 Trabajo en Equipo
 
 ### Organización del Trabajo
-[Describir brevemente cómo se dividieron las tareas entre los integrantes]
+Nos dividimos las tareas asignando partes según la comodidad de cada integrante. Uno se encargó de investigar las herramientas, otro de redactar las conclusiones y otro de preparar el formato final en Markdown.
 
 ### Beneficios de la Colaboración
-[Ventajas identificadas al trabajar en equipo en este proyecto]
+Trabajar en equipo permitió avanzar más rápido, compartir dudas y aprender de las explicaciones de los demás. Además, cada persona aportó una perspectiva distinta que mejoró el resultado final.
 
 ### Mejoras para Futuros Proyectos
-[Sugerencias para optimizar la colaboración en proyectos similares]
+Sería útil organizar mejor el tiempo, comunicarnos más seguido y revisar el trabajo conjunto antes de entregarlo para asegurar coherencia en todo el proyecto.
 
 ---
 
@@ -144,15 +172,15 @@
 
 ### Valor del Enfoque de Dos Fases
 
-**Principal beneficio de evaluar antes y después del uso:**
-[En 2-3 líneas: valor de contrastar impresiones iniciales con experiencia real]
+**Principal beneficio de evaluar antes y después del uso:**  
+Permite comparar lo que pensábamos al principio con lo que realmente sentimos después de estar usandoo la herramienta. Esto ayuda a tomar decisiones más seguras y basadas en experiencia real.
 
-**¿Se recomienda esta metodología de evaluación?** [Sí/No]
-**¿Por qué?** [Justificación del enfoque progresivo]
+**¿Se recomienda esta metodología de evaluación?** Sí  
+**¿Por qué?** Porque, yo creo te obliga a probar la herramienta de verdad, no solo a opinar sin haberla usado, y eso mejora mucho el aprendizaje.
 
 ### Reflexión Personal
 
-**Lo más valioso del ejercicio:**
-[Principal aprendizaje o insight obtenido del proceso completo]
+**Lo más valioso del ejercicio:**  
+Aprendimos a diferenciar mejor las herramientas de desarrollo, a identificar qué nos esta funcionando a nosotros como principiante y a trabajar con una estructura más organizada usando Markdown.
 
 ---
