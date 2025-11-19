@@ -35,31 +35,31 @@
 
 | Aspecto | Visual Studio Code | Visual Studio |
 |---------|-------------------|---------------|
-| **Productividad real** | [Tras semanas de uso] | [Tras semanas de uso] |
-| **Facilidad para desarrollo** | [Experiencia práctica] | [Experiencia práctica] |
-| **Herramientas más utilizadas** | [Lo que realmente se usa] | [Lo que realmente se usa] |
-| **Valoración final** | [Evaluación final] | [Evaluación final] |
+| **Productividad real** | Alta para proyectos pequeños y medianos. Rápido para pruebas y scripts. | Superior en proyectos grandes y complejos. Mejor para desarrollo empresarial. |
+| **Facilidad para desarrollo** | Ágil pero requiere configurar extensiones frecuentemente. Debugging básico suficiente. | Más intuitivo para C# una vez familiarizado. Debugging muy potente y visual. |
+| **Herramientas más utilizadas** | Terminal integrado, Git integrado, IntelliSense, extensiones a medida. | Depurador avanzado, diseñador de interfaces, NuGet integrado. |
+| **Valoración final** | 8/10 - Excelente para desarrollo ágil y multi-lenguaje. | 9/10 - El IDE ideal para proyectos .NET profesionales. |
 
 ### Evolución de la Preferencia
 
-**¿Cambió la preferencia inicial?** [Sí/No]
+**¿Cambió la preferencia inicial?** Sí
 
-**IDE preferido final:** [Visual Studio Code / Visual Studio]
+**IDE preferido final:** Visual Studio
 
 **Justificación del cambio o mantenimiento:**
-[Explicar cómo la experiencia práctica influyó en la decisión final]
+Aunque VS Code destacó inicialmente por su velocidad, el trabajo en proyectos C# más complejos reveló las limitaciones de las extensiones. Visual Studio demostró ser más completo para debugging avanzado, gestión de dependencias y refactorización de código. La integración nativa con .NET y las herramientas de análisis de rendimiento son esenciales para desarrollo profesional.
 
 ### Principales Aprendizajes
 
 **Lo que no se esperaba al principio:**
-- [Descubrimiento 1]
-- [Descubrimiento 2]
+- VS Code necesita configuración constante para igualar la funcionalidad básica de VS en C#
+- Visual Studio consume más recursos pero compensa con herramientas que ahorran tiempo considerable
 
 **Características más valiosas en la práctica:**
-[Herramientas o funcionalidades que resultaron esenciales en el uso diario]
+El depurador de Visual Studio (breakpoints condicionales, etc), la refactorización inteligente y el análisis de código en tiempo real. En VS Code, la flexibilidad del terminal integrado y la velocidad de arranque para cambios rápidos.
 
 **Características menos útiles de lo esperado:**
-[Funcionalidades que parecían importantes pero no se utilizaron frecuentemente]
+Muchas extensiones instaladas en VS Code terminaron desactivadas por bajo uso.
 
 ---
 
@@ -68,29 +68,29 @@
 ### Aspectos Más Destacados
 
 **De Visual Studio Code:**
-[Lo que más destacó o resultó útil]
+Su versatilidad para cambiar entre diferentes lenguajes y proyectos sin reconfigurar todo el entorno. Ideal para desarrollo rápido y exploración de código.
 
 **De Visual Studio:**
-[Lo que más destacó o resultó útil]
-
+La profundidad de las herramientas de debugging y la integración perfecta con el ecosistema .NET.
 ### Dificultades Encontradas
 
 **Problemas durante instalación/configuración:**
-[Describir problemas significativos y sus soluciones]
+VS Code requirió varias extensiones y ajustes para conseguir un IntelliSense fiable. Visual Studio tuvo conflictos iniciales con versiones de SDK.
 
 **Curva de aprendizaje:**
-[Aspectos que requirieron más tiempo para dominar]
+En VS Code: entender qué extensiones son necesarias vs. opcionales. En Visual Studio: navegar la interfaz sobrecargada y encontrar las opciones relevantes entre cientos de menús.
 
 ### Conocimientos Adquiridos
 
 **Principales aprendizajes técnicos:**
-1. [Aprendizaje técnico 1]
-2. [Aprendizaje técnico 2]
-3. [Aprendizaje técnico 3]
+1. Diferencia entre editores extensibles y IDEs integrados para desarrollo profesional
+2. Configuración de entornos de desarrollo .NET y gestión de SDKs
+3. Uso avanzado de herramientas de debugging y análisis de rendimiento
 
 **Habilidades desarrolladas:**
-- [Habilidad práctica 1]
-- [Habilidad práctica 2]
+- Evaluación crítica de herramientas según necesidades reales del proyecto
+- Configuración y personalización de entornos de desarrollo
+- Optimización del flujo de trabajo según el tipo y tamaño del proyecto
 
 ---
 
