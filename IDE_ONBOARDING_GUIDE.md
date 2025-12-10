@@ -4,9 +4,9 @@
 
 > **Nota importante**: Este documento se enfoca en aspectos técnicos y procedimientos. Para análisis comparativos, reflexiones personales y conclusiones, utiliza el archivo `CONCLUSIONES_EVALUACION.md`.
 
-**Autores**: [Nicolas] y [Kevin]
-**Fecha V0**: [Fecha de entrega inicial]
-**Fecha V1**: [Fecha de entrega final]
+**Autores**: Nicolas y Kevin
+**Fecha V0**: 20/09/2025
+**Fecha V1**: 10/12/2025
 
 ---
 ## Visual Studio Code - Entorno Principal
@@ -92,7 +92,7 @@ Esto dependiendo de tu sistema operativo, se descargará uno de los siguientes a
 
 #### Para distribuciones Fedora/RHEL/CentOS (.rpm)
 
-1. Ejecuta elarchivo `.rpm` descargado anteriomente.
+1. Ejecuta el archivo `.rpm` descargado anteriomente.
 2. Abre una terminal y ejecuta:
 
     ```bash
@@ -131,7 +131,7 @@ VS Code organiza todo en un panel lateral donde puedes acceder al explorador de 
 extensiones, búsqueda y control de versiones. La barra superior muestra las pestañas de los archivos abiertos y la barra de estado indica información 
 útil como el lenguaje detectado o errores del editor.  
 
-![BarrraVS](screenshots/VSBarralateral.png)
+![BarrraLateralVS](screenshots/VSBarralateral.png)
 
 ## Edición de código
 El editor permite escribir código con resaltado de sintaxis, autocompletado inteligente y detección de errores mientras escribes. Además, puedes duplicar líneas, seleccionar múltiples puntos y usar la búsqueda integrada para editar más rápido.  
@@ -175,13 +175,12 @@ Mejora la experiencia al mostrar diferentes iconos según el tipo de archivo, lo
 ![Temas](screenshots/temas_Completos.png)
 
 ---
-
 ## Fuentes
 
 ### Fira Code
 Incluye ligaduras que unen ciertos símbolos del código en formas más claras y agradables visualmente. Esto ayuda a entender estructuras complejas.
 
-![Firacode](screenshots/firacode.png)-https://github.com/tonsky/FiraCode
+![Firacode](screenshots/Firacode.png)-https://github.com/tonsky/FiraCode
 
 ### JetBrains Mono
 Especialmente diseñada para programar. Sus líneas anchas y espaciado equilibrado aumentan la comodidad durante la lectura prolongada.  
@@ -334,17 +333,17 @@ Para compilar y ejecutar el código, sigue estos pasos:
 - **Descarga:** Visita la página oficial https://visualstudio.microsoft.com/es/
 Se recomienda la versión Community (gratuita) o Professional (si se dispone de licencia).
 
-![](screenshots/vs1.png)
+![imagen visual studio](screenshots/vs1.png)
 - **Componentes necesarios:** Durante la instalación, selecciona la carga de trabajo:
 Desarrollo de escritorio con .NET (incluye C#, Windows Forms, WPF, .NET SDK, y compiladores).
 
-![](screenshots/vs2.png)
+![dentro de visual studio](screenshots/vs2.png)
 - **Verificación:** 
   - Abre Visual Studio.
   - Crea un nuevo proyecto C# (por ejemplo, “Consola .NET”).
   - Si el proyecto compila y ejecuta correctamente (“Hello World”), la instalación fue exitosa.
  
-![](screenshots/vs3.png)
+![Imagen demostracion "Hello World""](screenshots/vs3.png)
 ### Desarrollo con C#
 
 **Creación de proyecto:**
@@ -354,8 +353,8 @@ Desarrollo de escritorio con .NET (incluye C#, Windows Forms, WPF, .NET SDK, y c
 - Configurar el nombre y la ubicación del proyecto
 - Hacer clic en "Crear"
 
-![](screenshots/vs4.png)
-![](screenshots/vs5.png)
+![Como crear un proyecto](screenshots/vs4.png)
+![Configuracion de proyecto](screenshots/vs5.png)
 **Flujo de trabajo básico:**
 - **Escribir código:** Utiliza el editor para escribir tu código C#
 - **Compilar:** Presiona `Ctrl + Shift + B` o selecciona "Compilar" en el menú
@@ -374,12 +373,12 @@ Desarrollo de escritorio con .NET (incluye C#, Windows Forms, WPF, .NET SDK, y c
 **Runtime/SDK:**
 - **Descarga e instalación:** Visitar la página oficial https://www.python.org/downloads/
 
-![](screenshots/py1.png)
+![Pagina web Python](screenshots/py1.png)
 - **Verificación:**
   - Abrir terminal y ejecutar: `python --version` o `python3 --version`
   - Debe mostrar la versión instalada
 
-![](screenshots/py2.png)
+![Verificacion](screenshots/py2.png)
 ### Configuración en VS Code
 
 **Extensiones por lenguaje:**
@@ -496,7 +495,7 @@ python index.py --factorial 5
 5! = 120s
 ```
 **Capturas de pantalla del proyecto en VS Code:**
-![](screenshots/py2.png)
+![Captura de un proyecto](screenshots/py2.png)
 
 **Ejecución paso a paso**:
 - Abrimos terminal con Ctrl+j
@@ -563,6 +562,8 @@ Ajustes recomendados para cualquier desarrollador que comience a trabajar con VS
 ### 1.6 Sincronización de configuraciones
 * Usar **Settings Sync** integrado:
     * Sincroniza extensiones, configuraciones, atajos, snippets.
+
+![Todos los atajos visual studio](/screenshots/atajosvisualstudio.png)
 * Alternativa: extensiones como `Settings Sync v3`.
 
 ---

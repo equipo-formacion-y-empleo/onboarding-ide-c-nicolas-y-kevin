@@ -1,8 +1,8 @@
 # Conclusiones y Evaluación - Entornos de Desarrollo C#
 
-**Autores**: [Kevin] y [Nicolás]
-**Fecha Entrega Inicial**: [08/11/2025]
-**Fecha Entrega Final**: [Fecha]
+**Autores**: Kevin y Nicolás
+**Fecha Entrega Inicial**: 08/11/2025
+**Fecha Entrega Final**: 10/12/2025
 
 > **Instrucciones**: Completar la **Sección A** para la entrega inicial y **todas las secciones** para la entrega final. Indicar claramente qué partes corresponden a cada fase.
 
