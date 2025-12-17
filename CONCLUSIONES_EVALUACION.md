@@ -130,13 +130,13 @@ Permite ejecutar comandos sin salir de VS Code, algo muy práctico cuando empiez
 ### Para Futuros Desarrolladores
 
 **Consejos para alguien que inicia con C#:**
-- [Aprende la base bien: entiende variables, tipos, condicionales, bucles y clases. Con eso ya puedes hacer casi cualquier cosa simple.]
-- [Practica con pequeños proyectos: una calculadora, con if switch, bucles, saltos etc.]
-- [Utilizar la IA para que te ayude a comprenderlo, pero no que te lo haga]
+- Aprende la base bien: entiende variables, tipos, condicionales, bucles y clases. Con eso ya puedes hacer casi cualquier cosa simple.
+- Practica con pequeños proyectos: una calculadora, con if switch, bucles, saltos etc.
+- Utilizar la IA para que te ayude a comprenderlo, pero no que te lo haga todo, ya que si no no aprenderás nada.
 
 **Errores a evitar:**
-- [Como he dicho anteriormente utilizar la IA todo el rato pero solo para el autocompletado, sin tu entender nada]
-- [La sintaxis ya que muchas veces puede que tengas la idea clara pero como no te sabes la estrucura no lo haces bien]
+- Como he dicho anteriormente utilizar la IA todo el rato pero solo para el autocompletado, sin tu entender nada
+- La sintaxis ya que muchas veces puede que tengas la idea clara pero como no te sabes la estructura no lo haces bien
 
 ---
 
